@@ -27,6 +27,10 @@ Os diretores da UniAlfa ficaram muito animados com o crescimento da universidade
 - Typescript
 - Documentação publicada no postman
 
+## Análise
+
+https://excalidraw.com/#json=ar9YJV2KPwOB1hit2MnEp,hqHgz-orKOUz1dmUiAK9EA
+
 ## Preencha aqui as seguintes informações no seu fork
 
 **Nome completo**:
