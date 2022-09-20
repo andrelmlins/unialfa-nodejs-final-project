@@ -40,3 +40,44 @@ https://excalidraw.com/#json=ar9YJV2KPwOB1hit2MnEp,hqHgz-orKOUz1dmUiAK9EA
 **Url da documentação**:
 
 ### Descreva abaixo como iniciar seu projeto
+
+
+## Endpoints
+
+## Users
+
+- POST - {HOST-SERVICE}/users/register
+```json
+{
+    "name": "Lucas Giori Cesconetto",
+    "email":"teste@gmail.com",
+    "password": "12345678"
+}
+```
+- POST - {HOST-SERVICE}/users/login 
+```json
+{
+    "email": "teste@gmail.com",
+    "password": "123456789"
+}
+```
+
+- GET - {HOST-SERVICE}/users/me
+```
+--header Authorization: {token}
+```
+
+## Posts
+
+- POST - {HOST-SERVICE}/posts 
+```json
+{
+    "title":"Post One",
+    "content": "Post Content",
+    "user_id": "632773e1cf3471c48bfad6cc"
+}
+```
+
+- GET - {HOST-SERVICE}/posts
+- GET - {HOST-SERVICE}/posts?user=&sort=DESC&page=1&limit=10
+- GET - {HOST-SERVICE}/posts?user=632773e1cf3471c48bfad6cc&sort=ASC&page=1&limit=10
