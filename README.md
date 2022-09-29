@@ -29,10 +29,19 @@ Os diretores da UniAlfa ficaram muito animados com o crescimento da universidade
 
 ## Preencha aqui as seguintes informações no seu fork
 
-**Nome completo**:
+**Nome completo**: Pedro Henrique Maia
 
-**Email**:
+**Email**: phmaia2018@gmail.com
 
-**Url da documentação**:
+**Url da documentação**: https://documenter.getpostman.com/view/16125990/2s83mjEg3S
 
 ### Descreva abaixo como iniciar seu projeto
+
+<h1 align="center">Draco Backend</h1><br>
+
+Start the project:
+```
+$ docker-compose up
+```
+***
+[postman collection to import](/doc-postman/draco-backend.postman_collection.json)
