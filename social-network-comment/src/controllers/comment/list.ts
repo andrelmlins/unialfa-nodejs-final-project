@@ -3,7 +3,6 @@ import { RequestHandler } from "express";
 import Comment from "../../models/comment";
 
 const listComments: RequestHandler = async (req, res) => {
-  //{{host-social-network-post}}/posts?user=&sort=DESC
   // Se passar usuário ele filtra pelo id usando regex,
   // se não passar ele faz uma busca de todos,
   // se não passar o sort por padrão ele deixa os posts mais recentes
