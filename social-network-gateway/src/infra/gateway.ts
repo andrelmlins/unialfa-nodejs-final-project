@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const requestHttp = async (url: string, method: string, data?: any) => {
 
-    const response = await axios.post(
+   try { const response = await axios.post(
       url, {
       method,
       body: JSON.stringify(data),
@@ -10,8 +10,12 @@ const requestHttp = async (url: string, method: string, data?: any) => {
         'Content-Type': 'application/json',
       },
     });
-    const json = await response.json();
-    return json;
+    console.log(response)
+    // const json = await response.json();
+    //  return json;
+   } catch (error) {
+     console.error(error.message)
+   }
   }
 
   export default requestHttp;

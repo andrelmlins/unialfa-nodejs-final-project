@@ -1,11 +1,11 @@
 import  requestHttp from '../../infra/gateway';
 
-const serviceListPosts = async (id?: string) => {
-  const url = id ? `http://localhost:3000/posts/${id}` : 'http://localhost:3000/posts';
+const serviceListPosts = async (uri: string, id?: string) => {
+  const url = id ? `${uri}/posts/${id}` : `${uri}/posts`;
   
   await requestHttp(url, 'GET');
 
-  await requestHttp(url, 'GET');
+  // await requestHttp(url, 'GET');
 };
 
 export default serviceListPosts;
