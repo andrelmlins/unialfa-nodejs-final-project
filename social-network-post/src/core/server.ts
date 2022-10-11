@@ -9,7 +9,7 @@ import formatError from '../middlewares/format.error';
 const server = () => {
   const app = express();
 
-  mongoose.connect('mongodb://post-mongo:27017/poststore');
+  mongoose.connect('mongodb://post-mongo:27021/poststore');
   
   config();
 

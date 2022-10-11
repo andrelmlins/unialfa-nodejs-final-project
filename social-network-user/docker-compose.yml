@@ -6,7 +6,7 @@ services:
     env_file:
       - .env
     networks:
-      - socialmedia
+      - socialnetwork
     volumes:
       - ./:/usr/src/app
     depends_on:
@@ -20,7 +20,7 @@ services:
     ports:
       - 8080:80
     networks:
-      - socialmedia  
+      - socialnetwork  
     depends_on:
       - user-app
 
@@ -30,9 +30,9 @@ services:
     ports:
       - "27018:27017"
     networks:
-      - socialmedia
+      - socialnetwork
     volumes:
       - ./mongo/data/db:/data/db
 
 networks:
-  socialmedia:
+  socialnetwork:

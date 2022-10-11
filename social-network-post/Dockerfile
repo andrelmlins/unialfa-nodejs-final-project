@@ -2,6 +2,7 @@ FROM node:16.10.0
 
 RUN mkdir -p /usr/src/app
 
+RUN apt-get update && apt install telnet
 WORKDIR /usr/src/app
 
 COPY package.*json ./
