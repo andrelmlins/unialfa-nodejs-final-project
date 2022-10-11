@@ -38,6 +38,6 @@ Os diretores da UniAlfa ficaram muito animados com o crescimento da universidade
 ### Descreva abaixo como iniciar seu projeto
 
 -   fazer copia do arquivo .env.example
--   para instalação dos pacotes rodar yarn
--   para rodar projeto local yarn start
--   para rodar os testes yarn test
+-   para instalação dos pacotes rodar yarn ou npm install
+-   para rodar projeto local yarn start ou npm start
+-   para rodar os testes yarn test ou npm test
