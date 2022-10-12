@@ -16,47 +16,17 @@ https://excalidraw.com/#json=ar9YJV2KPwOB1hit2MnEp,hqHgz-orKOUz1dmUiAK9EA
 
 ### Descreva abaixo como iniciar seu projeto
 
+#### Clonar o projeto:
 
-## Endpoints
-
-## Users
-
-- POST - {HOST-SERVICE}/users/register
-```json
-{
-    "name": "Lucas Giori Cesconetto",
-    "email":"teste@gmail.com",
-    "password": "12345678"
-}
-```
-- POST - {HOST-SERVICE}/users/login 
-```json
-{
-    "email": "teste@gmail.com",
-    "password": "123456789"
-}
+```bash
+    git clone git@github.com:LucasGiori/unialfa-nodejs-final-project.git unialfa-nodejs
 ```
 
-- GET - {HOST-SERVICE}/users/me
+#### Build (deve estar na raiz do projeto para executar o comando):
+
+```bash
+    docker-compose up -d --build
 ```
---header Authorization: {token}
-```
-
-## Posts
-
-- POST - {HOST-SERVICE}/posts 
-```json
-{
-    "title":"Post One",
-    "content": "Post Content",
-    "user_id": "632773e1cf3471c48bfad6cc"
-}
-```
-
-- GET - {HOST-SERVICE}/posts
-- GET - {HOST-SERVICE}/posts?user=&sort=DESC&page=1&limit=10
-- GET - {HOST-SERVICE}/posts?user=632773e1cf3471c48bfad6cc&sort=ASC&page=1&limit=10
-
 
 # Projeto final da disciplina de NodeJS da UniALFA
 
