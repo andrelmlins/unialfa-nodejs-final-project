@@ -11,7 +11,6 @@ const server = () => {
 
   mongoose.connect('mongodb://like-mongo:27017/likestore');
 
-  
   config();
 
   app.use(bodyParser.json());

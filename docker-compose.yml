@@ -28,7 +28,7 @@ services:
     container_name: mongo
     image: mongo
     ports:
-      - "27018:27017"
+      - "27018:27018"
     networks:
       - socialnetwork
     volumes:
@@ -62,7 +62,7 @@ services:
     container_name: post-mongo
     image: mongo
     ports:
-      - "27021:27017"
+      - "27021:27021"
     networks:
       - socialnetwork
     volumes:
@@ -96,7 +96,7 @@ services:
     container_name: like-mongo
     image: mongo
     ports:
-      - "27020:27017"
+      - "27020:27020"
     networks:
       - socialnetwork
     volumes:
@@ -152,7 +152,7 @@ services:
     container_name: comment-mongo
     image: mongo
     ports:
-      - "27019:27017"
+      - "27019:27019"
     networks:
       - socialnetwork
     volumes:
@@ -160,3 +160,4 @@ services:
   
 networks:
   socialnetwork:
+    driver: bridge

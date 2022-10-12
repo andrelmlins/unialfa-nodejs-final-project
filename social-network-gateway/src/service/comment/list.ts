@@ -1,7 +1,11 @@
-import  requestHttp from '../../infra/gateway';
+import  { RequestHttp } from '../../infra/gateway';
 
-const serviceListComments = async (id?: string ) => {
-  requestHttp({ id }, 'http://localhost:3000/comments', 'GET');
+const serviceListComments = async (params?: any) => {
+  const request = new RequestHttp('http://comment-nginx');
+
+  const response = await request.get('/comment', params);
+  
+  return response;
 };
 
 export default serviceListComments;

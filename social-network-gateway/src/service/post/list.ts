@@ -1,11 +1,12 @@
-import  requestHttp from '../../infra/gateway';
+import { RequestHttp } from '../../infra/gateway';
 
-const serviceListPosts = async (uri: string, id?: string) => {
-  const url = id ? `${uri}/posts/${id}` : `${uri}/posts`;
-  
-  await requestHttp(url, 'GET');
+const serviceListPosts = async (params?: any) => {
 
-  // await requestHttp(url, 'GET');
+  const request = new RequestHttp('http://post-nginx');
+
+  const response = await request.get('/posts', params);
+
+  return response;
 };
 
 export default serviceListPosts;
