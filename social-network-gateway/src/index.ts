@@ -1,7 +1,7 @@
 import server from './core/server';
 const { networkInterfaces } = require('os');
 
-const port = 3004;
+const port = 3003;
 
 server().listen(port, () => {
   console.log(networkInterfaces().eth0[0].address)
