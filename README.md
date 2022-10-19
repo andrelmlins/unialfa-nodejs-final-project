@@ -29,10 +29,16 @@ Os diretores da UniAlfa ficaram muito animados com o crescimento da universidade
 
 ## Preencha aqui as seguintes informações no seu fork
 
-**Nome completo**:
+**Nome completo**: Aline Hardt Silveira
 
-**Email**:
+**Email**: alinne.1904@gmail.com
 
-**Url da documentação**:
+**Url da documentação**: https://documenter.getpostman.com/view/17012074/2s847Cwa7M
 
 ### Descreva abaixo como iniciar seu projeto
+
+Após clonar execute o comando
+
+```
+docker-compose up --build -d
+```
