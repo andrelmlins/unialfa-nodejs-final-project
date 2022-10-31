@@ -2,7 +2,9 @@
 
 Os diretores da UniAlfa ficaram muito animados com o crescimento da universidade e decidiram criar a UniAlfa Social, a rede social da universidade. Esta rede social consiste em basicamente uma área onde é possível cadastrar e remover postagens, curtir e comentar postagens. Para realizar estas ações o usuário precisa estar logado no sistema.
 
-![UniALFA Social](logo.png)
+<p align="center">
+  <img alt="UniALFA Social" src="./assets/logo.png" />
+</p>
 
 ## O que esperamos ter nesta API?
 
@@ -29,10 +31,13 @@ Os diretores da UniAlfa ficaram muito animados com o crescimento da universidade
 
 ## Preencha aqui as seguintes informações no seu fork
 
-**Nome completo**:
+**Nome completo**: Wellington da Silva Ferreira
 
-**Email**:
+**Email**: wellingtonsilvaferreira01@gmail.com
 
-**Url da documentação**:
+**Url da documentação**: https://documenter.getpostman.com/view/5013246/2s8YRiJYiL
 
-### Descreva abaixo como iniciar seu projeto
+## Descreva abaixo como iniciar seu projeto
+```
+docker-compose up -d
+```
